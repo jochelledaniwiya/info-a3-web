@@ -41,30 +41,50 @@ body {
     overflow: hidden;
 }
 
-/* header */
+/* top nav */
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+    width: 390px;
+    height: 45px;
+    background: var(--beige);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 24px;
+    padding: 9px 21px 9px 24px;
 }
 
 .logo img{
-    height: 48px;
+    width: 43.03px;
+    height: 26px;
+    object-fit: contain;
 }
 
 /* nav icons */
 .nav-icons {
     display: flex;
-    gap: 16px;
+    align-items: center;
+    gap: 10px;
 }
 
 .nav-icons button {
+    width: 24px;
+    height: 24px;
+
     background: none;
     border: none;
-    font-size: 24px;
-    color: var(--darkgreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+}
+
+.nav-icons img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
 }
 
 /* hero */
