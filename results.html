@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Tea Warehouse</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="page results-page">
+    
+        <!-- top nav -->
+        <header class="header">
+            <a href="index.html" class="logo">
+                <img src="images/TWHlogo.png" alt="tea warehouse logo">
+            </a>
+
+            <nav class="nav-icons" aria-label="top nav">
+                <button aria-label="search">
+                    <img src="images/search-icon.png" alt="search">
+                </button>
+                <button aria-label="cart">
+                    <img src="images/cart.png" alt="cart">
+                </button>
+                <button aria-label="menu">
+                    <img src="images/menu-icon.png" alt="menu">
+                </button>
+            </nav>
+        </header>
+
+        <!-- heading -->
+        <main class="results-main">
+            <section class="results-heading">
+                <div>
+                    <h1>RESULTS</h1>
+                    <p>7 Items</p>
+                </div>
+                <a href="#" class="show-all">Show All</a>
+            </section>
+
+            <section class="filter-bar">
+                <button>Filter <span>+</span></button>
+            </section>
+
+            <!-- product list -->
+            <section class="product-grid">
+
+                <!-- japanese sencha green tea -->
+                <article class="product-card">
+                    <div class="product-img-container">
+                        <img src="images/jpsencha.png" alt="Japanese Sencha Green Tea">
+                        <button class="quick-add">
+                            <img src="images/add.png" alt="quick add button">
+                        </button>
+                    </div>
+                    <h2>Japanese Sencha Green Tea</h2>
+                    <p class="price">AUD $20.00</p>
+                </article>
+
+                <!-- japanese bancha green tea -->
+                <article class="product-card">
+                    <div class="product-img-container">
+                        <img src="images/jpbancha.jpg" alt="Japanese Bancha Green Tea">
+                        <button class="quick-add">
+                            <img src="images/add.png" alt="quick add button">
+                        </button>
+                    </div>
+                    <h2>Japanese Bancha Green Tea</h2>
+                    <p class="price">AUD $20.00</p>
+                </article>
+
+            </section>
+
+
+        </main>
+    </div>
+</body>
+</html>

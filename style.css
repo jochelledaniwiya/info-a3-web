@@ -1,4 +1,4 @@
-/* setting colours */
+/* setting colours and fonts */
 :root {
     --white: #F2EEE6;
     --beige: #DDD6C8;
@@ -13,6 +13,22 @@
     --space-m: 24px;
     --space-l: 48px;
     --space-xl: 64px
+}
+/* initializing typography */
+h1 {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 22px;
+}
+h2 {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 17px;
+}
+.price {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    font-size: 12px;
 }
 
 /* reset spacings */
@@ -290,4 +306,104 @@ body {
     width: 12px;
     height: 12px;
     object-fit: contain;
+}
+
+/* RESULTS PAGE */
+.results-page {
+    background: var(--beige);
+}
+
+/* results heading */
+.results-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 16px;
+}
+.results-text {
+    display: flex;
+    flex-direction: column;
+}
+.items-count {
+    font-family: var(--font-mono);
+    font-size: 12px;
+}
+.show-all {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    text-decoration: underline;
+    color: var(--darkgreen);
+}
+
+/* filter bar */
+.filter-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #2C3424;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.filter-bar button {
+    background: transparent;
+    border: none;
+    color:#F2EEE6;
+    font-family: var(--font-mono);
+    font-size: 9px;
+
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter-bar button:first-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 31px 20px;
+}
+
+/* card */
+.product-img-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
+.product-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* quick add */
+.quick-add {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+.quick-add img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 1px 4px #36402A);
+}
+
+/* text */
+.product-card h2 {
+    margin-top: 8px;
+}
+.price {
+    margin-top: 2px;
 }
