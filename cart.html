@@ -34,14 +34,11 @@
 
         <!-- heading -->
         <main class="cart-main">
-            <section class="cart-heading">
-                <div>
-                    <h1>SHOPPING CART</h1>
-            </section>
-        
-            <!-- back -->
-            <a href="results.html" class="back-link"> Back</a>
 
+            <a href="product-detail.html" class="back-link"> Back</a>
+            
+            <h1 class="cart-title">SHOPPING CART</h1>
+        
             <!-- product list -->
              <section class="cart-list">
 
@@ -49,10 +46,14 @@
                 <article class="cart-card">
                     <div class="cart-img-container">
                         <img src="images/jasminegreen.jpg" alt="Organic jasmine Green Tea">
-                        <button class="quick-add">
-                            <img src="images/add.png" alt="quick add button">
-                        </button>
+                        <!-- quantity button -->
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
                     </div>
+                    <!-- product info -->
                     <div class="cart-text">
                         <h2>Organic Jasmine Green Tea</h2>
                         <p class="price">AUD $15.00</p>
@@ -60,25 +61,16 @@
                     <button class="removebtn">
                             <img src="images/removebtn.png" alt="remove btn">
                     </button>
+
                 </article>
 
-                 <!-- sweet dreams -->
-                <article class="cart-card">
-                    <div class="cart-img-container">
-                        <img src="images/sweetdreams.jpg" alt="sweet dreams">
-                        <button class="quick-add">
-                            <img src="images/add.png" alt="quick add button">
-                        </button>
-                    </div>
-                    <div class="cart-text">
-                        <h2>Sweet Dreams</h2>
-                        <p class="price">AUD $15.00</p>
-                    </div>
-                    <button class="removebtn">
-                            <img src="images/removebtn.png" alt="remove btn">
-                    </button>
-                </article>
              </section>
+
+             <!-- cart total -->
+              <div class="cart-total">
+                <span>TOTAL:</span>
+                <span>AUD $15.00</span>
+              </div>
 
               <!-- add to cart -->
             <button class="checkout-btn">CHECKOUT</button>
@@ -113,3 +105,4 @@
                     </article>
                 </div>
             </section>
+        </main>
