@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Tea Warehouse</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="page purchase">
+    
+        <!-- top nav -->
+        <header class="header">
+            <a href="index.html" class="logo">
+                <img src="images/TWHlogo.png" alt="tea warehouse logo">
+            </a>
+
+            <nav class="nav-icons" aria-label="top nav">
+                <button aria-label="search">
+                    <img src="images/search-icon.png" alt="search">
+                </button>
+                <button aria-label="cart">
+                    <img src="images/cart.png" alt="cart">
+                </button>
+                <button aria-label="menu">
+                    <img src="images/menu-icon.png" alt="menu">
+                </button>
+            </nav>
+        </header>
+
+        <main class="purchase-main">
+            <!-- back link -->
+            <a href="cart.html" class="back-link">Back</a>
+
+            <!-- title -->
+            <h1 class="purchase-title">CHECKOUT</h1>
+
+            <!-- express checkout -->
+            <section class="express-section">
+                <h2 class="purchase-heading">Express Checkout</h2>
+                <button class="applepay-btn">
+                    <img src="images/applepay.png" alt="apple pay">
+                </button>  
+            </section>
+
+            <!-- divider -->
+             <div class="checkout-divider">
+                <div class="divider-line"></div>
+                <span>OR</span>
+                <div class="divider-line"></div>
+             </div>
+
+            <!-- card info -->
+            <section class="payment-section">
+                <h2 class="purchase-heading">Credit Card Details</h2>
+
+                <!-- name -->
+                 <div class="input-group">
+                    <label>Name on card</label>
+                    <input type="text">
+                 </div>
+
+                <!-- card no. -->
+                 <div class="input-group">
+                    <label>Card number</label>
+                    <input type="text">
+                 </div>
+
+                <!-- cvv & expiry -->
+                 <div class="double-input">
+                    <div class="input-group">
+                        <label>CVV</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-group">
+                        <label>Expiry</label>
+                        <input type="text">
+                    </div>  
+                 </div>
+
+                <!-- billing -->
+                  <div class="input-group">
+                    <label>Billing address</label>
+                    <textarea></textarea>
+                  </div>
+                
+                <!-- state & postcode -->
+                 <div class="double-input">
+                    <div class="input-group">
+                        <label>State</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-group">
+                        <label>Postcode</label>
+                        <input type="text">
+                    </div>  
+                 </div>
+
+             </section>
+
+            <button class="confirm-btn">CONFIRM</button>
+
+        </main>
