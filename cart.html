@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="page product-page">
+    <div class="page cart-page">
     
         <!-- top nav -->
         <header class="header">
@@ -32,40 +32,56 @@
             </nav>
         </header>
 
-        <main class="product-main">
-        <!-- ORGANIC JASMINE GREEN TEA -->
+        <!-- heading -->
+        <main class="cart-main">
+            <section class="cart-heading">
+                <div>
+                    <h1>SHOPPING CART</h1>
+            </section>
+        
             <!-- back -->
-             <a href="results.html" class="back-link">Back</a>
+            <a href="results.html" class="back-link"> Back</a>
 
-            <!-- title  -->
-            <section class="product-title-card">
-                <h1>Organic Jasmine Green Tea</h1>
-                <p> AUD $15.00 </p> 
-            </section>
+            <!-- product list -->
+             <section class="cart-list">
 
-            <!-- product images -->
-            <section class="product-gallery">
-                <img src="images/jasminegreen.jpg" alt="Organic Jasmine Green Tea" class="product-main-img">
-                <div class="thumbnail-row">
-                    <img src="images/jasminegreen.jpg" alt="">
-                    <img src="images/jasminetn.jpg" alt="">
-                </div>
-            </section>
-            
-            <!-- dropdown info -->
-            <section class="product-dropdown">
-                <button class="dropdown-btn">
-                    Product description
-                    <img src="images/arrow-down.png" alt="">
-                </button>
-                <button class="dropdown-btn">
-                    Reviews
-                    <img src="images/arrow-down.png" alt="">
-                </button>
-            </section>
+                <!-- Organic jasmine green tea -->
+                <article class="cart-card">
+                    <div class="cart-img-container">
+                        <img src="images/jasminegreen.jpg" alt="Organic jasmine Green Tea">
+                        <button class="quick-add">
+                            <img src="images/add.png" alt="quick add button">
+                        </button>
+                    </div>
+                    <div class="cart-text">
+                        <h2>Organic Jasmine Green Tea</h2>
+                        <p class="price">AUD $15.00</p>
+                    </div>
+                    <button class="removebtn">
+                            <img src="images/removebtn.png" alt="remove btn">
+                    </button>
+                </article>
 
-            <!-- add to cart -->
-            <button class="addtocart-btn">ADD TO CART</button>
+                 <!-- sweet dreams -->
+                <article class="cart-card">
+                    <div class="cart-img-container">
+                        <img src="images/sweetdreams.jpg" alt="sweet dreams">
+                        <button class="quick-add">
+                            <img src="images/add.png" alt="quick add button">
+                        </button>
+                    </div>
+                    <div class="cart-text">
+                        <h2>Sweet Dreams</h2>
+                        <p class="price">AUD $15.00</p>
+                    </div>
+                    <button class="removebtn">
+                            <img src="images/removebtn.png" alt="remove btn">
+                    </button>
+                </article>
+             </section>
+
+              <!-- add to cart -->
+            <button class="checkout-btn">CHECKOUT</button>
 
             <!-- recommendation section -->
             <section class="rec-section">
@@ -97,9 +113,3 @@
                     </article>
                 </div>
             </section>
-
-
-        </main>
-    </div>
-</body>
-</html>
