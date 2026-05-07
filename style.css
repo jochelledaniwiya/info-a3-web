@@ -655,3 +655,60 @@ body {
     color: #F2EEE6;
     cursor: pointer;
 }
+
+
+/* PURCHASE PAGE */
+.purchase-main {
+    padding: 20px 12px 80px;
+}
+.purchase-title {
+    margin-bottom: 44px;
+}
+.purchase-heading {
+    margin-bottom: 18px;
+    font-family: var(--font-mono);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* apple pay */
+.express-section {
+    margin-bottom: 44px;
+}
+.applepay-btn {
+    width: 100%;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 100px;
+    background: var(--lightgreen);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+
+    cursor: pointer;
+}
+.applepay-btn img {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* divider */
+.checkout-divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 56px;
+}
+.divider-line {
+    flex: 1;
+    height: 1px;
+    background: var(--darkgreen);
+}
+.checkout-divider span {
+    font-family: var(--font-mono);
+    font-size: 18px;
+    font-weight: 500;
+}
