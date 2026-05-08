@@ -772,3 +772,58 @@ body {
     color: #F2EEE6;
     cursor: pointer;
 }
+
+/* CONFIRMATION PAGE */
+.confirmation-main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px 100px;
+}
+
+/* shopping bag icon */
+.confirmation-icon {
+    width: 82px;
+    height: 82px;
+    margin-bottom: 20px;
+}
+.confirmation-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* confirmation text */
+.confirmation-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.confirmation-text h1 {
+    margin-bottom: 10px;
+    font-size: 38px;
+}
+.confirmation-text p {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    color: var(--darkgreen);
+}
+
+/* continue button */
+.continue-btn {
+    width: 100%;
+    height: 43px;
+    border-radius: 100px;
+    background-color: var(--lightgreen);
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
