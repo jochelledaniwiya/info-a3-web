@@ -422,7 +422,7 @@ body {
 /* back link */
 .back-link {
     display: inline-block;
-    margin: 18px 0 10px 5px;
+    margin: 10px 0 5px 5px;
     font-family: var(--font-mono);
     font-size: 12px;
     color: var(--darkgreen);
@@ -539,10 +539,10 @@ body {
     padding: 20px 12px 60px;
 }
 .cart-title {
-    margin-bottom: 18px;
+    margin-bottom: 10px;
 }
 .cart-list {
-    margin-top: 36px;
+    margin-top: 20px;
 
 }
 /* cart product */
@@ -628,7 +628,7 @@ body {
 
 /* cart total price */
 .cart-total {
-    margin: 26px 0 18px;
+    margin: 50px 0 10px;
     display: flex;
     gap: 16px;
     font-family: var(--font-mono);
@@ -662,10 +662,10 @@ body {
     padding: 20px 12px 80px;
 }
 .purchase-title {
-    margin-bottom: 44px;
+    margin-bottom: 35px;
 }
 .purchase-heading {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     font-family: var(--font-mono);
     font-size: 18px;
     font-weight: 600;
@@ -673,7 +673,7 @@ body {
 
 /* apple pay */
 .express-section {
-    margin-bottom: 44px;
+    margin-bottom: 45px;
 }
 .applepay-btn {
     width: 100%;
@@ -699,8 +699,8 @@ body {
 .checkout-divider {
     display: flex;
     align-items: center;
-    gap: 16px;
-    margin-bottom: 56px;
+    gap: 10px;
+    margin-bottom: 45px;
 }
 .divider-line {
     flex: 1;
@@ -711,4 +711,64 @@ body {
     font-family: var(--font-mono);
     font-size: 18px;
     font-weight: 500;
+}
+
+/* credit card form */
+.payment-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input-group label {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 500;
+}
+.input-group input, .input-group textarea {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    padding: 14px;
+
+    background: #D9D9D9;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--darkgreen);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.input-group input {
+    height: 30px;
+}
+.input-group textarea {
+    height: 90px;
+    resize: none;
+}
+
+.double-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+/* confirm button */
+.confirm-btn {
+    width: 100%;
+    height: 43px;
+    margin: 20px 0 30px;
+
+    border: none;
+    border-radius: 100px;
+    background: var(--lightgreen);
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    color: #F2EEE6;
+    cursor: pointer;
 }
