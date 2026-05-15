@@ -1,0 +1,126 @@
+
+/* setting colours and fonts */
+:root {
+    --white: #F2EEE6;
+    --beige: #DDD6C8;
+    --lightgreen: #4C583E;
+    --darkgreen: #2C3424;
+
+    --font-mono: 'IBM Plex Mono', monospace;
+    --font-sans: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background: var(--beige);
+}
+
+
+
+/* HOME PAGE */
+/* CTA button */
+.hero-btn {
+    background: var(--lightgreen);
+    color: var(--beige);
+
+    color: var(--white);
+}
+/* faq section */
+.outline-btn{
+    background: transparent;
+    color: var(--darkgreen);
+}
+/* button arrow */
+.outline-btn span{
+    background: var(--darkgreen);
+    color: var(--white);
+}
+
+
+/* RESULTS PAGE */
+.results-page {
+    background: var(--beige);
+}
+/* filter bar */
+.filter-bar {
+    background: #2C3424;
+}
+.filter-bar button {
+    background: transparent;
+    color:#F2EEE6;
+}
+
+
+
+
+/* PRODUCT DETAIL PAGE */
+.product-page {background: var(--beige)}
+/* product title */
+.product-title-card {
+    background: var(--darkgreen);
+    color: var(--white);
+}
+/* dropdown details */
+.dropdown-btn {
+    background: var(--darkgreen);
+    color: var(--white);
+}
+/* add to cart button */
+.addtocart-btn {
+    background: var(--lightgreen);
+    color: #F2EEE6;
+}
+
+
+
+/* CART PAGE */
+/* quantity button */
+.quantity-control {
+    background: var(--lightgreen);
+    color: var(--white);
+}
+.quantity-control button {
+    background: transparent;
+    color: var(--white);
+}
+/* checkout button */
+.checkout-btn {
+    background: var(--lightgreen);
+    color: #F2EEE6;
+}
+
+
+
+/* PURCHASE PAGE */
+/* apple pay */
+.applepay-btn {
+    background: var(--lightgreen);
+}
+.divider-line {
+    background: var(--darkgreen);
+}
+.input-group input, .input-group textarea {
+    background: #D9D9D9;
+    color: var(--darkgreen);
+}
+/* confirm button */
+.confirm-btn {
+    background: var(--lightgreen);
+    color: #F2EEE6;
+}
+
+
+
+/* CONFIRMATION PAGE */
+/* continue button */
+.continue-btn {
+    background-color: var(--lightgreen);
+    color: var(--white);
+}
+
+
+
+/* SEARCH POPUP */
+/* search bar */
+.search-bar {
+    background: rgba(255,255,255,0.72);
+}

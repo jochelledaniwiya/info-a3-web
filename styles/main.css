@@ -1,0 +1,31 @@
+@import url("colours.css");
+@import url("typography.css");
+@import url("spacing.css");
+@import url("layout.css");
+
+
+/* reset spacings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+/* base */
+body {
+    background: var(--beige);
+    color: var(--darkgreen);
+    font-family: var(--font-sans);
+}
+
+.page {
+    max-width: 390px;
+    margin: 0 auto;
+    background: var(--beige);
+    min-height: 100vh;
+    overflow: hidden;
+}

@@ -1,0 +1,208 @@
+body {
+    font-family: var(--font-sans);
+}
+
+/* initializing typography */
+h1 {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 22px;
+}
+h2 {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 17px;
+}
+.price {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+/* back link */
+.back-link {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--darkgreen);
+    text-decoration: underline;
+}
+
+/* HOME PAGE */
+/* CTA button */
+.hero-btn {
+    font-family: var(--font-mono);
+    font-weight: 500; 
+    font-size: 18px;
+}
+.tagline-section h2 {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.info-text {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 1.35;
+}
+/* button outlines */
+.outline-btn{
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 9px;
+}
+
+/* RESULTS PAGE */
+.items-count {
+    font-family: var(--font-mono);
+    font-size: 12px;
+}
+.show-all {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    text-decoration: underline;
+    color: var(--darkgreen);
+}
+.filter-bar button {
+    font-family: var(--font-mono);
+    font-size: 9px;
+}
+
+
+/* PRODUCT DETAIL PAGE */
+.product-title-card h1 {
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 500;
+}
+.product-title-card p {
+    margin-top: 2px;
+    font-family: var(--font-mono);
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--white);
+}
+/* recommendation section */
+.rec-heading {
+    font-family: var(--font-mono);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+/* dropdown details */
+.dropdown-btn {
+    font-family: var(--font-mono);
+    font-size: 15;
+    font-weight: 400;
+}
+/* add to cart button */
+.addtocart-btn {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+/* CART PAGE */
+/* cart product info */
+.cart-text h2{
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 18px;
+}
+.cart-price {
+    margin-top: 8px;
+    font-family: var(--font-mono);
+    font-size: 15px;
+    color: var(--darkgreen);
+}
+/* cart total price */
+.cart-total {
+    font-family: var(--font-mono);
+    font-size: 20px;
+    color: var(--darkgreen);
+}
+.cart-total span:first-child {
+    font-weight: 700;
+}
+/* quantity button */
+.quantity-control {
+    font-family: var(--font-mono);
+    font-size: 14px;
+}
+.quantity-control button {
+    font-family: var(--font-mono);
+    font-size: 16px;
+}
+/* checkout button */
+.checkout-btn {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+/* PURCHASE PAGE */
+.purchase-heading {
+    margin-bottom: 20px;
+    font-family: var(--font-mono);
+    font-size: 18px;
+    font-weight: 600;
+}
+.checkout-divider span {
+    font-family: var(--font-mono);
+    font-size: 18px;
+    font-weight: 500;
+}
+.input-group label {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 500;
+}
+.input-group input, .input-group textarea {
+    font-family: var(--font-mono);
+    font-size: 13px;
+}
+/* confirm button */
+.confirm-btn {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+/* CONFIRMATION PAGE */
+.confirmation-text h1 {
+    margin-bottom: 10px;
+    font-size: 38px;
+}
+.confirmation-text p {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    color: var(--darkgreen);
+}
+/* continue button */
+.continue-btn {
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* SEARCH PAGE  */
+.search-bar span {
+    color: #536A60;
+    font-family: var(--font-sans);
+    font-weight: 100;
+    font-size: 16px;
+}
+/* search bar */
+.search-bar {
+    text-decoration: none;
+}
+

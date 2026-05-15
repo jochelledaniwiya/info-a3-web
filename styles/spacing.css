@@ -1,0 +1,213 @@
+/* top nav */
+.header {
+    padding: 9px 8px;
+}
+
+/* nav icons */
+.nav-icons {
+    gap: 10px;
+}
+
+/* hero */
+.hero {
+    margin-bottom: 70px;
+}
+
+/* back link */
+.back-link {
+    display: inline-block;
+    margin: 10px 0 5px 5px;
+}
+
+
+/* HOME PAGE */
+/* tagline */
+.tagline-section {
+    padding: 0 24px 40px;
+}
+/* info section */
+.info-section {
+    column-gap: 20px;
+    margin-bottom: 56px;
+}
+/* category section */
+.categories {
+    padding-right: 24px;
+}
+/* faq section */
+.faq {
+    padding-left: 24px;
+}
+.line {
+    margin-bottom: 14px;
+}
+/* button outlines */
+.outline-btn{
+    margin-top: 18px;
+    padding: 0 8px;
+}
+
+
+
+/* RESULTS PAGE */
+/* results heading */
+.results-heading {
+    margin-bottom: 16px;
+}
+/* filter bar */
+.filter-bar {
+    margin-bottom: 24px;
+}
+.filter-bar button {
+    padding: 0 8px;
+}
+/* resuable product grid */
+.product-grid {
+    gap: 31px 20px;
+}
+/* quick add */
+.quick-add {
+    padding: 0;
+}
+/* product name and price */
+.product-card h2 {
+    margin-top: 8px;
+}
+.price {
+    margin-top: 2px;
+}
+
+
+
+/* PRODUCT DETAIL PAGE */
+/* product title */
+.product-title-card {
+    padding: 10px 12px;
+    margin-bottom: 7px;
+}
+/* thumbnails */
+.thumbnail-row {
+    gap: 12px;
+    margin: 7px 0 14px;
+}
+/* dropdowns */
+.product-dropdown {
+    gap: 6px;
+}
+.dropdown-btn {
+    padding: 0 14px;
+}
+/* add to cart button */
+.addtocart-btn {
+    margin: 20px 0 30px;
+}
+/* recommendation section */
+.rec-section {
+    padding: 0 5px;
+}
+
+
+
+/* CART PAGE */
+.cart-main {
+    padding: 20px 12px 60px;
+}
+.cart-title {
+    margin-bottom: 10px;
+}
+.cart-list {
+    margin-top: 20px;
+
+}
+/* cart product */
+.cart-card {
+    gap: 12px;
+}
+/* quantity button */
+.quantity-control {
+    padding: 0 14px;
+}
+/* remove product button */
+.removebtn {
+    padding: 0;
+}
+/* checkout button */
+.checkout-btn {
+    margin-bottom: 90px;
+}
+/* cart total price */
+.cart-total {
+    margin: 50px 0 10px;
+    display: flex;
+    gap: 16px;
+    font-family: var(--font-mono);
+    font-size: 20px;
+    color: var(--darkgreen);
+}
+
+
+
+
+/* PURCHASE PAGE */
+.purchase-main {
+    padding: 20px 12px 80px;
+}
+.purchase-title {
+    margin-bottom: 35px;
+}
+/* apple pay */
+.express-section {
+    margin-bottom: 45px;
+}
+/* divider */
+.checkout-divider {
+    gap: 10px;
+    margin-bottom: 45px;
+}
+/* credit card form */
+.payment-section {
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.input-group {
+    gap: 10px;
+}
+.input-group input, .input-group textarea {
+    padding: 14px;
+}
+.double-input {
+    gap: 18px;
+}
+/* confirm button */
+.confirm-btn {
+    margin: 20px 0 30px;
+}
+
+
+
+/* CONFIRMATION PAGE */
+.confirmation-main {
+    padding: 40px 24px 100px;
+}
+/* shopping bag icon */
+.confirmation-icon {
+    margin-bottom: 20px;
+}
+/* confirmation text */
+.confirmation-text {
+    margin-bottom: 30px;
+}
+
+
+/* SEARCH POPUP */
+/* search content */
+.search-main {
+    padding: 100px 35px;
+}
+/* search bar */
+.search-bar {
+    padding: 0 22px;
+    gap: 14px;
+}
+
+
