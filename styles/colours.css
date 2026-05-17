@@ -10,6 +10,9 @@
     --font-sans: 'Nunito Sans', sans-serif;
 }
 
+.header {
+    background: var(--beige);
+}
 body {
     background: var(--beige);
 }
@@ -121,6 +124,9 @@ body {
 
 /* SEARCH POPUP */
 /* search bar */
+.search-overlay {
+    background: rgba(221, 214, 200, 0.7);
+}
 .search-bar {
     background: rgba(255,255,255,0.72);
 }

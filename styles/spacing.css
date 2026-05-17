@@ -201,6 +201,9 @@
 
 /* SEARCH POPUP */
 /* search content */
+.search-overlay {
+    padding-top: 0px;
+}
 .search-main {
     padding: 100px 35px;
 }

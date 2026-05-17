@@ -36,7 +36,7 @@ const products = {
     },
 };
 
-const params = URLSearchParams(window.location.search);
+const params = new URLSearchParams(window.location.search);
 const currProductId = params.get("product");
 const productData = products[currProductId];
 
@@ -46,3 +46,20 @@ function initPage() {
     document.getElementById("product-title").textContent = productData.title;
     document.getElementById("main-product-img").src = productData.imgsrc1;
 }
+
+const searchOverlay = document.querySelector(".search-overlay");
+const searchBar = document.querySelector(".search-bar");
+window.openSearch = function () {
+    searchOverlay.style.display = "flex";
+}
+
+window.closeSearch = function () {
+    searchOverlay.style.display = "none";
+}
+
+searchOverlay.addEventListener("click", closeSearch);
+
+searchBar.addEventListener("click", function (event) {
+    event.stopPropagation();
+});
+
