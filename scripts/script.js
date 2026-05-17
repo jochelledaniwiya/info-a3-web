@@ -36,16 +36,15 @@ const products = {
     },
 };
 
-const params = new URLSearchParams(window.location.search);
-const currProductId = params.get("product");
-const productData = products[currProductId];
-
 function initPage() {
-    const productData = products[product]
+    const params = new URLSearchParams(window.location.search);
+    const currProductId = params.get("product");
+    const productData = products[currProductId];
 
     document.getElementById("product-title").textContent = productData.title;
     document.getElementById("main-product-img").src = productData.imgsrc1;
 }
+initPage();
 
 const searchOverlay = document.querySelector(".search-overlay");
 const searchBar = document.querySelector(".search-bar");

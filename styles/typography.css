@@ -68,6 +68,13 @@ h2 {
     font-family: var(--font-mono);
     font-size: 9px;
 }
+/* product card */
+.product-card a {
+    text-decoration: none;
+}
+.product-card a:hover {
+    text-decoration: none;
+}
 
 
 /* PRODUCT DETAIL PAGE */

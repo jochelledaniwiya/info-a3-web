@@ -51,6 +51,10 @@ body {
     background: transparent;
     color:#F2EEE6;
 }
+/* product cards */
+.product-card a {
+    color: var(--darkgreen)
+}
 
 
 
