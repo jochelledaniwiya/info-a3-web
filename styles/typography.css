@@ -104,7 +104,7 @@ h2 {
     font-weight: 400;
 }
 /* add to cart button */
-.addtocart-btn {
+#addtocart-btn {
     font-family: var(--font-mono);
     font-size: 16px;
     font-weight: 500;
@@ -148,7 +148,9 @@ h2 {
     font-family: var(--font-mono);
     font-size: 16px;
     font-weight: 500;
+    text-decoration: none;
 }
+
 
 
 
@@ -178,6 +180,7 @@ h2 {
     font-family: var(--font-mono);
     font-size: 16px;
     font-weight: 500;
+    text-decoration: none;
 }
 
 

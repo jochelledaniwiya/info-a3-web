@@ -72,7 +72,7 @@ body {
     color: var(--white);
 }
 /* add to cart button */
-.addtocart-btn {
+#addtocart-btn {
     background: var(--lightgreen);
     color: #F2EEE6;
 }
