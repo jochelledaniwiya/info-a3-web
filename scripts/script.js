@@ -36,7 +36,8 @@ const products = {
     },
 };
 
-// search overlay
+
+// product detail page
 function initPage() {
     const params = new URLSearchParams(window.location.search);
     const currProductId = params.get("product");
@@ -55,6 +56,7 @@ function initPage() {
 
 initPage();
 
+// search overlay
 const searchOverlay = document.querySelector(".search-overlay");
 const searchBar = document.querySelector(".search-bar");
 window.openSearch = function () {
@@ -71,19 +73,39 @@ searchBar.addEventListener("click", function (event) {
     event.stopPropagation();
 });
 
-// to add products to cart
+// product quantities in cart
 function addToCart(productId) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cart.push(productId);
+    const existingproduct = cart.find(function(item) {
+        return item.id === productId;
+    });
+
+    if (existingproduct) {
+        existingproduct.quantity += 1;
+    } else {
+        cart.push({
+            id: productId,
+            quantity: 1
+        });
+    }
     localStorage.setItem("cart", JSON.stringify(cart));
     window.location.href = "cart.html";
 }
 
+// add to cart button 
 const addcartbtn = document.getElementById("addtocart-btn");
 if (addcartbtn) {
     addcartbtn.addEventListener("click", function () {
         addToCart("jasminegreen");
     });
+}
+
+// to remove products from cart
+function removeFromCart(index) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    showCart();
 }
 
 // cart page
@@ -93,8 +115,8 @@ function showCart () {
 
     if(!cartItems) return;
     cartItems.innerHTML = "";
-    cart.forEach(function(productId) {
-        const product = products[productId];
+    cart.forEach(function(item, index) {
+        const product = products[item.id];
 
         cartItems.innerHTML += `
             <article class="cart-card">
@@ -103,7 +125,7 @@ function showCart () {
 
                     <div class="quantity-control">
                         <button>-</button>
-                        <span>1</span>
+                        <span>${item.quantity}</span>
                         <button>+</button>
                     </div>
                 </div>
@@ -112,13 +134,20 @@ function showCart () {
                     <h2>${product.title}</h2>
                     <p class="price">${product.price}</p>
                 </div>
-                <button class="removebtn">
+                <button class="removebtn" data-index="${index}">
                         <img src="images/removebtn.png" alt="remove btn">
                 </button>
 
             </article>
-        `;
-            
+        `;      
+    });
+
+    const removebuttons = document.querySelectorAll(".removebtn");
+    removebuttons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            const index = button.dataset.index;
+            removeFromCart(index);
+        });
     });
 }
 

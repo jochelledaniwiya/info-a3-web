@@ -43,9 +43,9 @@
             <!-- express checkout -->
             <section class="express-section">
                 <h2 class="purchase-heading">Express Checkout</h2>
-                <button class="applepay-btn">
+                <a href="confirmation.html" class="applepay-btn">
                     <img src="images/applepay.png" alt="apple pay">
-                </button>  
+                </a>  
             </section>
 
             <!-- divider -->
@@ -56,35 +56,35 @@
              </div>
 
             <!-- card info -->
-            <section class="payment-section">
+            <form class="payment-section">
                 <h2 class="purchase-heading">Credit Card Details</h2>
 
                 <!-- name -->
                  <div class="input-group">
-                    <label>Name on card</label>
-                    <input type="text">
+                    <label for="name">Name on card</label>
+                    <input name="name" type="text" placeholder="Jane Doe">
                  </div>
 
                 <!-- card no. -->
                  <div class="input-group">
                     <label>Card number</label>
-                    <input type="text">
+                    <input type="text" placeholder="1234 1234 1234">
                  </div>
 
                 <!-- cvv & expiry -->
                  <div class="double-input">
                     <div class="input-group">
                         <label>CVV</label>
-                        <input type="text">
+                        <input type="text" placeholder="123">
                     </div>
                     <div class="input-group">
                         <label>Expiry</label>
-                        <input type="text">
+                        <input type="text" placeholder="MM/YY">
                     </div>  
                  </div>
 
                 <!-- billing -->
-                  <div class="input-group">
+                  <div class="input-group" placeholder="123 street">
                     <label>Billing address</label>
                     <textarea></textarea>
                   </div>
@@ -97,11 +97,11 @@
                     </div>
                     <div class="input-group">
                         <label>Postcode</label>
-                        <input type="text">
+                        <input type="text" placeholder="1234">
                     </div>  
                  </div>
 
-             </section>
+                </form>
             
              <!-- confirm button -->
             <a href="confirmation.html" class="confirm-btn">CONFIRM</a>
