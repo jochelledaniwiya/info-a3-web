@@ -111,6 +111,18 @@ if (addcartbtn) {
     });
 }
 
+// quick add
+const quickaddbtn = document.querySelectorAll(".quick-add");
+quickaddbtn.forEach(function(button) {
+    button.addEventListener("click", function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        const productId = button.dataset.product;
+        addToCart(productId);
+    });
+});
+
+
 // to remove products from cart
 function removeFromCart(index) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
