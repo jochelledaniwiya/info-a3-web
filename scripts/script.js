@@ -3,36 +3,43 @@ const products = {
         title: "Jasmine Sencha Green Tea",
         price: "AUD $20.00",
         imgsrc1: "images/jpsencha.png",
+        thumb1: "images/jpsencha.png",
     },
     bancha: {
         title: "Japanese Bancha Green Tea",
         price: "AUD $20.00",
         imgsrc1: "images/jpbancha.jpg",
+        thumb1: "images/jpbancha.jpg",
     },
     lime: {
         title: "Japanese Lime Green Tea",
         price: "AUD $20.00",
         imgsrc1: "images/jplime.jpg",
+        thumb1: "images/jplime.jpg",
     },
     jasminegreen: {
         title: "Organic Jasmine Green Tea",
         price: "AUD $15.00",
         imgsrc1: "images/jasminegreen.jpg",
+        thumb1: "images/jasminegreen.jpg",
     },
     darjeeling: {
         title: "Darjeeling",
         price: "AUD $20.00",
         imgsrc1: "images/darjeeling.jpg",
+        thumb1: "images/darjeeling.jpg",
     },
     balance: {
         title: "Balance",
         price: "AUD $15.00",
         imgsrc1: "images/balance.jpg",
+        thumb1: "images/balance.jpg",
     },
     dreams: {
         title: "Sweet Dreams",
         price: "AUD $15.00",
         imgsrc1: "images/sweetdreams.jpg",
+        thumb1: "images/sweetdreams.jpg",
     },
 };
 
@@ -48,10 +55,12 @@ function initPage() {
     const title = document.getElementById("product-title");
     const img = document.getElementById("main-product-img");
     const price = document.getElementById("product-price");
+    const thumb1 = document.getElementById("thumb-1");
 
     if (title) title.textContent = productData.title;
     if (img) img.src = productData.imgsrc1;
     if (price) price.textContent = productData.price;
+    if (thumb1) thumb1.src = productData.thumb1;
 }
 
 initPage();
@@ -96,7 +105,9 @@ function addToCart(productId) {
 const addcartbtn = document.getElementById("addtocart-btn");
 if (addcartbtn) {
     addcartbtn.addEventListener("click", function () {
-        addToCart("jasminegreen");
+        const params = new URLSearchParams(window.location.search);
+        const currProductId = params.get("product");
+        addToCart(currProductId);
     });
 }
 
