@@ -28,3 +28,11 @@ body {
     background: var(--beige);
     min-height: 100vh;
 }
+
+/* product card hover */
+.product-card {
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.product-card:hover {
+    transform: translateY(-6px);
+}

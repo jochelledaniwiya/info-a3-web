@@ -157,6 +157,25 @@ function removeFromCart(index) {
     showCart();
 }
 
+// quantity
+function increaseQuantity(index) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart[index].quantity += 1;
+    localStorage.setItem("cart", JSON.stringify(cart));
+    showCart();
+}
+function decreaseQuantity(index) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    if (cart[index].quantity > 1){
+        cart[index].quantity -= 1;
+    } else {
+        cart.splice(index, 1);
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    showCart();
+}
+
 // cart page
 function showCart () {
 
@@ -177,9 +196,9 @@ function showCart () {
                     <img src="${product.imgsrc1}" alt="${product.title}">
 
                     <div class="quantity-control">
-                        <button>-</button>
+                        <button class="qty-minus" data-index="${index}">-</button>
                         <span>${item.quantity}</span>
-                        <button>+</button>
+                        <button class="qty-plus" data-index="${index}">+</button>
                     </div>
                 </div>
 
@@ -207,7 +226,26 @@ function showCart () {
             removeFromCart(index);
         });
     });
+
+    // plus button quantity
+    const plusButtons = document.querySelectorAll(".qty-plus");
+    plusButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            const index = button.dataset.index;
+            increaseQuantity(index);
+        });
+    });
+
+    // minus buttons
+    const minusButtons = document.querySelectorAll(".qty-minus");
+    minusButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            const index = button.dataset.index;
+            decreaseQuantity(index);
+        });
+    });
 }
+
 
 showCart();
 
