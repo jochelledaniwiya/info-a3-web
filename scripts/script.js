@@ -245,8 +245,21 @@ function showCart () {
         });
     });
 }
-
-
 showCart();
+
+// payment form validation
+const paymentForm = document.getElementById("payment-form");
+
+if (paymentForm) {
+    paymentForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        if (paymentForm.checkValidity()) {
+            window.location.href = "confirmation.html";
+        } else {
+            paymentForm.reportValidity();
+        }
+    });
+}
 
  

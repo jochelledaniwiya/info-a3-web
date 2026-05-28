@@ -56,55 +56,54 @@
              </div>
 
             <!-- card info -->
-            <form class="payment-section">
+            <form class="payment-section" id="payment-form">
                 <h2 class="purchase-heading">Credit Card Details</h2>
 
                 <!-- name -->
                  <div class="input-group">
                     <label for="name">Name on card</label>
-                    <input name="name" type="text" placeholder="Jane Doe">
+                    <input name="name" type="text" placeholder="Jane Doe" required>
                  </div>
 
                 <!-- card no. -->
                  <div class="input-group">
                     <label>Card number</label>
-                    <input type="text" placeholder="1234 1234 1234">
+                    <input type="text" placeholder="1234 1234 1234 1234" required>
                  </div>
 
                 <!-- cvv & expiry -->
                  <div class="double-input">
                     <div class="input-group">
                         <label>CVV</label>
-                        <input type="text" placeholder="123">
+                        <input type="text" placeholder="123" required>
                     </div>
                     <div class="input-group">
                         <label>Expiry</label>
-                        <input type="text" placeholder="MM/YY">
+                        <input type="text" placeholder="MM / YY" required>
                     </div>  
                  </div>
 
                 <!-- billing -->
                   <div class="input-group" placeholder="123 street">
                     <label>Billing address</label>
-                    <textarea></textarea>
+                    <textarea placeholder="Street address" required></textarea>
                   </div>
                 
                 <!-- state & postcode -->
                  <div class="double-input">
                     <div class="input-group">
                         <label>State</label>
-                        <input type="text">
+                        <input type="text" placeholder="State" required>
                     </div>
                     <div class="input-group">
                         <label>Postcode</label>
-                        <input type="text" placeholder="1234">
+                        <input type="text" placeholder="Postcode" required>
                     </div>  
                  </div>
 
-                </form>
-            
-             <!-- confirm button -->
-            <a href="confirmation.html" class="confirm-btn">CONFIRM</a>
+                 <!-- confirm button -->
+                <button type="submit" class="confirm-btn">CONFIRM</a>
+            </form>
 
             <div class="search-overlay">
                 <div class="search-main">
