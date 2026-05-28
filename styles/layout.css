@@ -57,7 +57,11 @@
 }
 /* CTA button */
 .hero-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position:absolute;
+
     bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
@@ -550,4 +554,14 @@
     height: 16px;
     object-fit: contain;
 }
-
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.search-bar button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

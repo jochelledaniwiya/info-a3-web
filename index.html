@@ -39,7 +39,7 @@
                 <div class="hero-container">
                     <img src="images/hero-mobile.jpg" alt="Tea being poured" class="hero-img">
                 </div>
-                <button class="hero-btn">EXPLORE OUR TEAS</button>
+                <a href="results.html" class="hero-btn">EXPLORE OUR TEAS</a>
             </section>
 
             <!-- tagline -->
@@ -89,12 +89,18 @@
         </main>
     </div>
 
+    <!-- search overlay -->
     <div class="search-overlay">
         <div class="search-main">
-            <a href="results.html" class="search-bar">
+            <div class="search-bar">
                 <img src="images/search-icon.png" alt="search">
-                <span>Search for products...</span>
-            </a>
+                <input 
+                    type="text"
+                    id="search-input"
+                    placeholder="Search for products..."
+                >
+                <button id="search-btn">SEARCH</button>
+            </div>
         </div>
     </div>
 

@@ -23,9 +23,10 @@ body {
 /* CTA button */
 .hero-btn {
     background: var(--lightgreen);
-    color: var(--beige);
-
     color: var(--white);
+}
+.hero-btn:hover {
+    background-color: #2C3424;
 }
 /* faq section */
 .outline-btn{
@@ -76,6 +77,10 @@ body {
     background: var(--lightgreen);
     color: #F2EEE6;
 }
+#addtocart-btn:hover {
+    background-color: #2C3424;
+}
+
 
 
 
@@ -94,6 +99,9 @@ body {
     background: var(--lightgreen);
     color: #F2EEE6;
 }
+.checkout-btn:hover {
+    background-color: #2C3424;
+}
 
 
 
@@ -101,6 +109,9 @@ body {
 /* apple pay */
 .applepay-btn {
     background: var(--lightgreen);
+}
+.applepay-btn:hover {
+    background-color: #2C3424;
 }
 .divider-line {
     background: var(--darkgreen);
@@ -114,6 +125,9 @@ body {
     background: var(--lightgreen);
     color: #F2EEE6;
 }
+.confirm-btn:hover {
+    background-color: #2C3424;
+}
 
 
 
@@ -122,6 +136,9 @@ body {
 .continue-btn {
     background-color: var(--lightgreen);
     color: var(--white);
+}
+.continue-btn:hover {
+    background-color: #2C3424;
 }
 
 

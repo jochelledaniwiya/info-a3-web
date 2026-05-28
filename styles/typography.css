@@ -33,6 +33,7 @@ h2 {
     font-family: var(--font-mono);
     font-weight: 500; 
     font-size: 18px;
+    text-decoration: none;
 }
 .tagline-section h2 {
     font-family: var(--font-mono);
@@ -214,5 +215,17 @@ h2 {
 /* search bar */
 .search-bar {
     text-decoration: none;
+}
+.search-bar input {
+    font-family: var(--font-sans);
+    font-weight: 100;
+    font-size: 14px;
+    color: #536A60;
+}
+.search-bar button {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 13px;
+    color: #536A60;
 }
 

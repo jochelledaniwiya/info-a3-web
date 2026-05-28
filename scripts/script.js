@@ -72,7 +72,7 @@ function initPage() {
 
 initPage();
 
-// search overlay
+// search overlay open and close
 const searchOverlay = document.querySelector(".search-overlay");
 const searchBar = document.querySelector(".search-bar");
 window.openSearch = function () {
@@ -88,6 +88,25 @@ searchOverlay.addEventListener("click", closeSearch);
 searchBar.addEventListener("click", function (event) {
     event.stopPropagation();
 });
+// search input
+const searchInput = document.getElementById("search-input");
+const searchBtn = document.getElementById("search-btn");
+
+if (searchInput && searchBtn) {
+    function performSearch() {
+        const query = searchInput.value.trim();
+        if(query != "") {
+            window.location.href =
+                `results.html?search=${encodeURIComponent(query)}`;
+        }
+}
+    searchBtn.addEventListener("click", performSearch);
+    searchInput.addEventListener("keydown", function(event) {
+        if(event.key === "Enter") {
+            performSearch();
+        }
+    });
+}
 
 // product quantities in cart
 function addToCart(productId) {
