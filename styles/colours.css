@@ -76,6 +76,10 @@ body {
     background: var(--darkgreen);
     color: var(--white);
 }
+.dropdown-content {
+    background: var(--darkgreen);
+    color: var(--white);
+}  
 /* add to cart button */
 #addtocart-btn {
     background: var(--lightgreen);

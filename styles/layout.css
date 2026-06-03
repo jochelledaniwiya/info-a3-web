@@ -332,10 +332,24 @@
 
     cursor: pointer;
 }
+.dropdown-btn.active {
+    border-radius: 12px 12px 0 0;
+}
+.dropdown-content {
+    display: none;
+    border-radius: 0 0 16px 16px;
+}
+.dropdown-content.active {
+    display: block;
+    border-radius: 0 0 12px 12px;
+}
 .dropdown-btn img {
     width: 9px;
     height: 5px;
     object-fit: contain;
+}
+.dropdown-btn.active .dropdown-arrow {
+    transform: rotate(180deg);
 }
 /* add to cart button */
 #addtocart-btn {

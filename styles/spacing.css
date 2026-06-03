@@ -93,10 +93,21 @@
 }
 /* dropdowns */
 .product-dropdown {
-    gap: 6px;
+    gap: 8px;
 }
 .dropdown-btn {
     padding: 0 14px;
+    margin: 0;
+}
+.dropdown-content {
+    padding: 16px;
+    margin: 0;
+}
+.dropdown-content p {
+    margin: 0;
+}
+.dropdown-content.active {
+    margin-bottom: 5px;
 }
 /* add to cart button */
 #addtocart-btn {

@@ -29,6 +29,11 @@ body {
     min-height: 100vh;
 }
 
+/* dropdown */
+.dropdown-arrow {
+    transition: transform 0.3s ease;
+}
+
 /* product card hover */
 .product-card {
     transition: transform 0.25s ease, opacity 0.25s ease;

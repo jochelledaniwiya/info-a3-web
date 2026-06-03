@@ -60,14 +60,28 @@
             
             <!-- dropdown info -->
             <section class="product-dropdown">
-                <button class="dropdown-btn">
-                    Product description
-                    <img src="images/arrow-down.png" alt="">
-                </button>
-                <button class="dropdown-btn">
-                    Reviews
-                    <img src="images/arrow-down.png" alt="">
-                </button>
+                <div class="dropdown-item">
+                    <button class="dropdown-btn">
+                        Product description
+                        <img src="images/arrow-down.png" alt="" class="dropdown-arrow">
+                    </button>
+                
+                    <div class="dropdown-content">
+                        <p id="product-description"></p>
+                    </div>
+                </div>
+
+                <div class="dropdown-item">
+                    <button class="dropdown-btn">
+                        Reviews
+                        <img src="images/arrow-down.png" alt="" class="dropdown-arrow">
+                    </button>
+
+                    <div class="dropdown-content">
+                        <p id="reviews">No reviews yet.</p>
+                    </div>
+                </div>
+                
             </section>
 
             <!-- add to cart -->

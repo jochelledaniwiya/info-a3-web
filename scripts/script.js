@@ -5,6 +5,7 @@ const products = {
         pricenum: 20,
         imgsrc1: "images/jpsencha.png",
         thumb1: "images/jpsencha.png",
+        description: "Sencha tea is a specialist type of green tea where the tea leaves are steamed before drying, giving them a higher level of vitamines and anti-oxidants than other green teas.",
     },
     bancha: {
         title: "Japanese Bancha Green Tea",
@@ -12,6 +13,7 @@ const products = {
         pricenum: 20,
         imgsrc1: "images/jpbancha.jpg",
         thumb1: "images/jpbancha.jpg",
+        description: "Bancha is harvested from the same tree as sencha grade, but it is plucked later than sencha and this gives it a lower market grade. It's flavour is truly unique, featuring a strong straw smell and though it is considered the lowest grade of Japanese green tea on the market, it is very popular as a daily tea in Japan.",
     },
     lime: {
         title: "Japanese Lime Green Tea",
@@ -19,6 +21,7 @@ const products = {
         pricenum: 20,
         imgsrc1: "images/jplime.jpg",
         thumb1: "images/jplime.jpg",
+        description: "A delightful blend of green teas, citrus peels and chamomile flowers with a refreshing lemon/lime taste. This tea contains 2 different green tea varieties: Sencha and Bancha. This refreshing, crisp citrus creation is load with lots of antioxidants and can be brewed hot or cold.",
     },
     jasminegreen: {
         title: "Organic Jasmine Green Tea",
@@ -26,6 +29,7 @@ const products = {
         pricenum: 15,
         imgsrc1: "images/jasminegreen.jpg",
         thumb1: "images/jasminegreen.jpg",
+        description: "It has a lot to offer thanks to high concentrations of antioxidants and anti-inflammatory properties. Jasmine Tea can also help promote a beautiful, healthy skin and boost your immune system.",
     },
     darjeeling: {
         title: "Darjeeling",
@@ -33,6 +37,7 @@ const products = {
         pricenum: 20,
         imgsrc1: "images/darjeeling.jpg",
         thumb1: "images/darjeeling.jpg",
+        description: "Originates from the Darjeeling district in the West Bengal region at the foot of the Himalayas in India, dating back to 1847, with the first three commercial Darjeeling Tea plantations up and running by 1852.  Today there are over 80 plantations in this region of the seven Valleys, most of these tea plantations are converting to organic farming. When properly brewed this tea is a light coloured infusion with a floral aroma. The Darjeeling variety is a black tea known as the 'Champagne of Teas'. A great brew for any time of the day...enjoy!",
     },
     balance: {
         title: "Balance",
@@ -40,6 +45,7 @@ const products = {
         pricenum: 15,
         imgsrc1: "images/balance.jpg",
         thumb1: "images/balance.jpg",
+        description: "We all need to get a little balance in our life and this is the tea which will do this for you. Ginger, lemon balm, cinnamon quills, cloves, cardamon pods, hawthorn berries and rose petals. A comforting warm tonic that promotes circulation and helps with digestion problems.",
     },
     dreams: {
         title: "Sweet Dreams",
@@ -47,6 +53,7 @@ const products = {
         pricenum: 15,
         imgsrc1: "images/sweetdreams.jpg",
         thumb1: "images/sweetdreams.jpg",
+        description: "After a busy day we all need a good night sleep and sweet dreams. This beautiful blend of orange passion flowers, chamomile, spearmint, hops, lemonbalm, rose petals, lime blossoms, calendula and lemongrass taken before bed will help with a great night sleep and amazing dreams.",
     },
 };
 
@@ -63,14 +70,26 @@ function initPage() {
     const img = document.getElementById("main-product-img");
     const price = document.getElementById("product-price");
     const thumb1 = document.getElementById("thumb-1");
+    const description = document.getElementById("product-description");
 
     if (title) title.textContent = productData.title;
     if (img) img.src = productData.imgsrc1;
     if (price) price.textContent = productData.price;
     if (thumb1) thumb1.src = productData.thumb1;
+    if (description) description.textContent = productData.description;
 }
 
 initPage();
+
+// dropdown details
+const dropdownBtns = document.querySelectorAll(".dropdown-btn");
+dropdownBtns.forEach(function(button) {
+    button.addEventListener("click", function() {
+        const content = button.nextElementSibling;
+        content.classList.toggle("active");
+        button.classList.toggle("active");
+    });
+});
 
 // search overlay open and close
 const searchOverlay = document.querySelector(".search-overlay");
