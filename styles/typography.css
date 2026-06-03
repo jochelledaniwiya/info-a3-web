@@ -19,6 +19,12 @@ h2 {
     font-size: 12px;
 }
 
+/* top nav */
+#cart-count {
+    font-size: 9px;
+    font-weight: 700;
+}
+
 /* back link */
 .back-link {
     font-family: var(--font-mono);

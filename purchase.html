@@ -24,8 +24,9 @@
                 <button onclick="openSearch()" class="nav-icon-link" aria-label="search">
                     <img src="images/search-icon.png" alt="search">
                 </button>
-                <a href="cart.html" class="nav-icon-link">
+                <a href="cart.html" class="nav-icon-link cart-icon">
                      <img src="images/cart.png" alt="cart">
+                     <span id="cart-count">0</span>
                 </a>
                 <button aria-label="menu">
                     <img src="images/menu-icon.png" alt="menu">
@@ -105,14 +106,21 @@
                 <button type="submit" class="confirm-btn">CONFIRM</a>
             </form>
 
-            <div class="search-overlay">
-                <div class="search-main">
-                    <a href="results.html" class="search-bar">
-                        <img src="images/search-icon.png" alt="search">
-                        <span>Search for products...</span>
-                    </a>
-                </div>
+    <!-- search overlay -->
+    <div class="search-overlay">
+        <div class="search-main">
+            <div class="search-bar">
+                <img src="images/search-icon.png" alt="search">
+                <input 
+                    type="text"
+                    id="search-input"
+                    placeholder="Search for products..."
+                >
+                <button id="search-btn"></button>
             </div>
+        </div>
+    </div>
+
         </main>
     </div>
     

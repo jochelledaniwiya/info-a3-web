@@ -17,7 +17,11 @@ body {
     background: var(--beige);
 }
 
-
+/* top nav */
+#cart-count {
+    background: var(--darkgreen);
+    color: var(--white);
+}
 
 /* HOME PAGE */
 /* CTA button */
