@@ -3,7 +3,6 @@
 @import url("spacing.css");
 @import url("layout.css");
 
-
 /* reset spacings */
 *{
     margin: 0;
@@ -41,3 +40,173 @@ body {
 .product-card:hover {
     transform: translateY(-6px);
 }
+
+
+
+
+
+/* DESKTOP VER */
+@media (min-width: 900px) {
+    .page {
+        max-width: 1440px;
+        width: 100%;
+    }
+
+    /* home page */
+    .hero {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 48px;
+        position: relative;
+    }
+
+    .hero-container {
+        height: 420px;
+        width: 100%;
+        border-radius: 100;
+    }
+
+    .tagline-section {
+        display: block;
+        position: absolute;
+        top: 145px;
+        right: 140px;
+        padding: 0%;
+        z-index: 2;
+        text-align: center;
+    }
+
+    .tagline-section h2 {
+        font-size: 32px;
+        max-width: 500px;
+    }
+
+    .hero-btn {
+        position: absolute;
+        top: 240px;
+        left: auto;
+        right: 120px;
+        transform: none;
+        width: 420px;
+        height: 64px;
+        z-index: 2;
+    }
+
+    .hero-img {
+        content: url("../images/laptopheader.jpg");
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .info-section-desktop {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+        padding: 48px 96px;
+    }
+
+    .info-section-desktop .info-section {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .info-section-desktop .categorymobile-gradient,
+    .info-section-desktop .faqmobile-gradient {
+        width: 100%;
+        height: 260px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        overflow: hidden;
+    }
+
+    .info-section-desktop .categorymobile-img,
+    .info-section-desktop .faqmobile-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .info-section-desktop .outline-btn {
+        width: 100%;
+        height: 70px;
+        border-radius: 100px;
+    }
+
+    .info-section-desktop .outline-btn span {
+        right: 12px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .info-text p {
+        font-size: 18px;
+    }
+
+    .outline-btn {
+        font-size: 22px;
+    }
+
+
+
+
+
+    
+
+
+
+
+
+    .header {
+        height: 70px;
+        padding: 0 64px;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+    }
+
+    .product-img-container {
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    .product-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    #main-product-img {
+        width: 100%;
+        height: 520px;
+        object-fit: cover;
+    }
+
+    .product-info {
+        max-width: 520px;
+    }
+
+    .results-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+    }
+
+    .cart-layout,
+    .checkout-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 48px;
+        padding: 80px 96px;
+    }
+
+    .recommendations-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
