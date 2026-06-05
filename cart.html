@@ -45,13 +45,16 @@
              <section class="cart-list" id="cart-items"></section>
 
              <!-- cart total -->
-              <div class="cart-total">
-                <span>TOTAL:</span>
-                <span id="cart-totalprice">AUD $0.00</span>
-              </div>
+              <aside class="cart-summary">
+                <div class="cart-total">
+                    <span>TOTAL:</span>
+                    <span id="cart-totalprice">AUD $0.00</span>
+                </div>
 
-              <!-- checkout -->
-            <a href="purchase.html" class="checkout-btn">CHECKOUT</a>
+                <!-- checkout -->
+                <a href="purchase.html" class="checkout-btn">CHECKOUT</a>
+              </aside>
+            
 
             <!-- recommendation section -->
             <section class="rec-section">
@@ -85,8 +88,39 @@
                         <p class="price">AUD $20.00</p>
                     </a>
                 </article>
+
+                <!-- Balance -->
+                    <article class="product-card">
+                        <a href="product-detail.html?product=balance">
+                            <div class="product-img-container">
+                                <img src="images/balance.jpg" alt="Balance">
+                                <button class="quick-add" data-product="balance">
+                                    <img src="images/add.png" alt="quick add button">
+                                </button>
+                            </div>
+                            <h2>Balance</h2>
+                            <p class="price">AUD $15.00</p>
+                        </a>
+                    </article>
+
+                    <!-- Darjeeling -->
+                    <article class="product-card">
+                        <a href="product-detail.html?product=darjeeling">
+                            <div class="product-img-container">
+                                <img src="images/darjeeling.jpg" alt="Darjeeling">
+                                <button class="quick-add" data-product="darjeeling">
+                                    <img src="images/add.png" alt="quick add button">
+                                </button>
+                            </div>
+                            <h2>Darjeeling</h2>
+                            <p class="price">AUD $20.00</p>
+                        </a>
+                    </article>
+                    
                 </div>
             </section>
+        </main>
+    </div>
 
     <!-- search overlay -->
     <div class="search-overlay">
@@ -103,7 +137,6 @@
         </div>
     </div>
 
-        </main>
         <script src="scripts/script.js"></script>
     </body>
 </html>
