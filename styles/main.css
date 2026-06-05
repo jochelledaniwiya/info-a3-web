@@ -363,7 +363,7 @@ body {
     .cart-list {
         grid-column: 1;
     }
-
+    /* right column */
     .cart-summary {
         grid-column: 2;
         grid-row: 3;
@@ -381,7 +381,7 @@ body {
         margin: 0;
         font-size: 20px;
     }
-
+    /* left column */
     .cart-card {
         grid-template-columns: 240px 1fr 40px;
         gap: 24px;
@@ -405,5 +405,66 @@ body {
     .quantity-control button {
         font-size: 30px;
     }
+
+
+    /* PURCHASE PAGE */
+    .purchase-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 24px;
+        padding: 48px 64px;
+        align-items: start;
+    }
+    .purchase-main .back-link, .purchase-title {
+        grid-column: 1/-1;
+    }
+    .express-section, .payment-section {
+        background: var(--darkgreen);
+        color: var(--white);
+        border-radius: 12px;
+        padding: 24px;
+    }
+    .express-section {
+        grid-column: 1;
+        margin-bottom: 0;
+    }
+    .payment-section {
+        grid-column: 2;
+        gap: 16px;
+        margin-top: 0;
+    }
+    .checkout-divider {
+        display: none;
+    }
+    .applepay-btn {
+        height: 64px;
+    }
+    .applepay-btn img {
+        width: 70px;
+    }
+    .purchase-heading {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+    .input-group input {
+        height: 36px;
+    }
+    .input-group textarea {
+        height: 110px;
+    }
+    .input-group input, .input-group textarea {
+        padding: 12px;
+    }
+    .double-input {
+        gap: 18px;
+    }
+    .confirm-btn {
+        height: 64px;
+        margin: 16px 0 0;
+        font-size: 18px;
+    }
+
+
+
 }
 
