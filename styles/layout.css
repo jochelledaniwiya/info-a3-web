@@ -58,6 +58,9 @@
     /* use as reference for button */
     position:relative; 
 }
+.hero-text {
+    display: block;
+}
 .hero-container {
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
