@@ -385,6 +385,33 @@ body::after {
 
 
     /* CART PAGE */
+    .cart-title {
+        margin-bottom: 15px;
+    }
+    /* shipping progress bar */
+    .shipping-progress-mobile {
+        display: none;
+    }
+    .shipping-progress-desktop {
+        display: block;
+    }
+    .cart-summary .shipping-progress {
+        margin: 20px 0 15px;
+    }
+    .cart-summary .shipping-message {
+        color: var(--white)
+    }
+    .cart-summary .progress-track {
+        background: var(--lightgreen);
+    }
+    .cart-summary .progress-fill {
+        background: var(--white);
+    }
+    .shipping-message {
+        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 3px;
+    }
     .cart-main { 
         display: grid;
         grid-template-columns: 1fr 650px;
@@ -397,6 +424,7 @@ body::after {
     }
     .cart-list {
         grid-column: 1;
+        margin-top: 0;
         margin-bottom: 40px;
     }
     /* right column */

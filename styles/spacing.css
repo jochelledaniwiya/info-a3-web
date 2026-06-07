@@ -129,11 +129,15 @@
 
 /* CART PAGE */
 .cart-main {
-    padding: 20px 18px 60px;
+    padding: 0px 18px 60px;
 }
 .cart-list {
     margin-top: 12px;
 
+}
+/* shipping progress bar */
+.shipping-progress {
+    margin: 15px 0 10px;
 }
 /* cart product */
 .cart-card {

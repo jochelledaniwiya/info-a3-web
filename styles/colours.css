@@ -93,6 +93,13 @@ body {
 
 
 /* CART PAGE */
+/* shipping progress */
+.progress-track {
+    background: var(--beige);
+}
+.progress-fill {
+    background: var(--darkgreen);
+}
 /* quantity button */
 .quantity-control {
     background: var(--lightgreen);

@@ -271,6 +271,24 @@ function showCart () {
         totalPrice.textContent = `AUD $${total.toFixed(2)}`;
     }
 
+    const freeShippingGoal = 75;
+    const progressFill = document.querySelectorAll(".progress-fill");
+    const shippingMessage = document.querySelectorAll(".shipping-message")
+    progressFill.forEach(function(fill) {
+        const progressPercent = Math.min((total / freeShippingGoal) * 100, 100);
+        fill.style.width = progressPercent + "%";
+    });
+
+    shippingMessage.forEach(function(message) {
+        if (total >= freeShippingGoal) {
+            message.textContent = "Congrats on free shipping!";
+        } else {
+            const remaining = freeShippingGoal - total;
+            message.textContent = 
+                `Spend AUD $${remaining.toFixed(2)} more for free shipping`;
+        }
+    });
+
     const removebuttons = document.querySelectorAll(".removebtn");
     removebuttons.forEach(function(button) {
         button.addEventListener("click", function() {
