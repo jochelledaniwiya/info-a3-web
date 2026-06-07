@@ -51,6 +51,9 @@
 
 
 /* RESULTS PAGE */
+.results-main {
+    padding: 0px 18px 60px;
+}
 /* results heading */
 .results-heading {
     margin-top: 10px;
@@ -82,10 +85,13 @@
 
 
 /* PRODUCT DETAIL PAGE */
+.product-main {
+    padding: 0px 18px 60px;
+}
 /* product title */
 .product-title-card {
-    padding: 10px 12px;
-    margin-bottom: 7px;
+    padding: 12px 12px;
+    margin-bottom: 10px;
 }
 /* thumbnails */
 .thumbnail-row {
@@ -101,7 +107,7 @@
     margin: 0;
 }
 .dropdown-content {
-    padding: 16px;
+    padding: 20px;
     margin: 0;
 }
 .dropdown-content p {
@@ -123,13 +129,10 @@
 
 /* CART PAGE */
 .cart-main {
-    padding: 20px 12px 60px;
-}
-.cart-title {
-    margin-bottom: 10px;
+    padding: 20px 18px 60px;
 }
 .cart-list {
-    margin-top: 15px;
+    margin-top: 12px;
 
 }
 /* cart product */
@@ -164,19 +167,19 @@
 
 /* PURCHASE PAGE */
 .purchase-main {
-    padding: 20px 12px 80px;
+    padding: 20px 18px 80px;
 }
 .purchase-title {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 /* apple pay */
 .express-section {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 /* divider */
 .checkout-divider {
     gap: 10px;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 /* credit card form */
 .payment-section {

@@ -17,19 +17,32 @@ img {
 }
 
 /* base */
+html, body {
+    overflow-x: hidden;
+}
 body {
     background: var(--beige);
     color: var(--darkgreen);
     font-family: var(--font-sans);
 }
-
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("../images/overlay.jpg") center/cover no-repeat;
+    opacity: 0.4;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: 9999;
+}
 .page {
     max-width: 390px;
     width: 100%;
     min-height: 844px;
     margin: 0 auto;
+    overflow-x: visible;
     background: var(--beige);
-    min-height: 100vh;
+    padding-top: 45px;
 }
 
 /* dropdown */
@@ -218,6 +231,9 @@ body {
     .outline-btn span img {
         width: 40px;
         height: 40px;
+    }
+    .line {
+        display: none;
     }
 
 

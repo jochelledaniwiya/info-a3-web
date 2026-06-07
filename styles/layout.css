@@ -1,9 +1,12 @@
 /* top nav */
 .header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1000;
     width: 100%;
+    max-width: 390px;
     height: 45px;
     display: flex;
     justify-content: space-between;
@@ -180,6 +183,8 @@
 .line {
     width: 100%;
     height: 1px;
+    background: var(--darkgreen);
+    margin-bottom: 14px;
 }
 /* button outlines */
 .outline-btn{
@@ -371,7 +376,7 @@
 /* cart product */
 .cart-card {
     display: grid;
-    grid-template-columns: 125px 1fr 26px;
+    grid-template-columns: 125px 1fr 30px;
     align-items: start;
 }
 .cart-img-container {
