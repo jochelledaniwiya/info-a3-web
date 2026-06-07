@@ -30,7 +30,7 @@ body::after {
     position: fixed;
     inset: 0;
     background: url("../images/overlay.jpg") center/cover no-repeat;
-    opacity: 0.4;
+    opacity: 0.3;
     mix-blend-mode: multiply;
     pointer-events: none;
     z-index: 9999;
@@ -67,6 +67,7 @@ body::after {
     .page {
         max-width: 1440px;
         width: 100%;
+        padding-top: 60px;
     }
     h1 {
         font-size: 33px;
@@ -78,10 +79,10 @@ body::after {
     font-size: 18px;
     }
 
-
     /* TOP NAV */
     .header {
         height: 70px;
+        max-width: 1440px;
         padding: 0 35px;
         align-items: center;
     }
