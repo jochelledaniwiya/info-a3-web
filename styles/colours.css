@@ -23,6 +23,11 @@ body {
     color: var(--white);
 }
 
+/* back link */
+.back-link {
+    color: var(--darkgreen);
+}
+
 /* HOME PAGE */
 /* CTA button */
 .hero-btn {
@@ -36,17 +41,25 @@ body {
 .outline-btn{
     background: transparent;
     color: var(--darkgreen);
+    border: 1px solid var(--darkgreen);
 }
 /* button arrow */
 .outline-btn span{
     background: var(--darkgreen);
     color: var(--white);
 }
+.line {
+    background: var(--darkgreen);
+}
 
 
 /* RESULTS PAGE */
+
 .results-page {
     background: var(--beige);
+}
+.show-all {
+    color: var(--darkgreen);
 }
 /* filter bar */
 .filter-bar {
@@ -66,6 +79,7 @@ body {
 
 /* PRODUCT DETAIL PAGE */
 .product-page {background: var(--beige)}
+
 /* product title */
 .product-title-card {
     background: var(--darkgreen);
@@ -99,6 +113,13 @@ body {
 }
 .progress-fill {
     background: var(--darkgreen);
+}
+/* cart */
+.cart-total {
+    color: var(--darkgreen);
+}
+.cart-price {
+    color: var(--darkgreen);
 }
 /* quantity button */
 .quantity-control {
@@ -155,6 +176,9 @@ body {
 .continue-btn:hover {
     background-color: #2C3424;
 }
+.confirmation-text p {
+    color: var(--darkgreen);
+}
 
 
 
@@ -165,4 +189,10 @@ body {
 }
 .search-bar {
     background: rgba(255,255,255,0.72);
+}
+.search-bar span {
+    color: #536A60;
+}
+.search-bar input {
+    color: #536A60;
 }

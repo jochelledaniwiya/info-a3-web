@@ -29,7 +29,6 @@ h2 {
 .back-link {
     font-family: var(--font-mono);
     font-size: 12px;
-    color: var(--darkgreen);
     text-decoration: underline;
 }
 
@@ -69,7 +68,6 @@ h2 {
     font-family: var(--font-mono);
     font-size: 12px;
     text-decoration: underline;
-    color: var(--darkgreen);
 }
 .filter-bar button {
     font-family: var(--font-mono);
@@ -86,7 +84,6 @@ h2 {
 
 /* PRODUCT DETAIL PAGE */
 .product-title-card h1 {
-    color: var(--white);
     font-size: 22px;
     font-weight: 500;
 }
@@ -142,13 +139,11 @@ h2 {
     margin-top: 8px;
     font-family: var(--font-mono);
     font-size: 15px;
-    color: var(--darkgreen);
 }
 /* cart total price */
 .cart-total {
     font-family: var(--font-mono);
     font-size: 20px;
-    color: var(--darkgreen);
 }
 .cart-total span:first-child {
     font-weight: 700;
@@ -212,7 +207,6 @@ h2 {
 .confirmation-text p {
     font-family: var(--font-sans);
     font-size: 16px;
-    color: var(--darkgreen);
 }
 /* continue button */
 .continue-btn {
@@ -225,7 +219,6 @@ h2 {
 
 /* SEARCH PAGE  */
 .search-bar span {
-    color: #536A60;
     font-family: var(--font-sans);
     font-weight: 100;
     font-size: 16px;
@@ -238,7 +231,6 @@ h2 {
     font-family: var(--font-sans);
     font-weight: 100;
     font-size: 14px;
-    color: #536A60;
 }
 
 
